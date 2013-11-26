@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HumanityViewContr">
+            <connections>
+                <outlet property="animaImageViewOne" destination="6Y1-7k-AWD" id="4cl-JV-e0g"/>
+                <outlet property="animaImageViewThr" destination="aWO-7d-Shd" id="AxJ-hl-3l8"/>
+                <outlet property="animaImageViewTwo" destination="iWB-MQ-Tsr" id="FPs-2N-17l"/>
+                <outlet property="contentScrolV" destination="5" id="16"/>
+                <outlet property="mainImageV" destination="17" id="18"/>
+                <outlet property="pageControl" destination="L6o-En-h7F" id="PB8-TR-d7T"/>
+                <outlet property="view" destination="4" id="15"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="4">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="1536"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg_humanity.jpg" id="0gA-L9-aH9">
+                    <rect key="frame" x="0.0" y="768" width="1024" height="768"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="humanity_float1.png" id="6Y1-7k-AWD">
+                    <rect key="frame" x="135" y="600" width="800" height="500"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="humanity_float2.png" id="iWB-MQ-Tsr">
+                    <rect key="frame" x="-30" y="700" width="260" height="1280"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="humanity_float3.png" id="aWO-7d-Shd">
+                    <rect key="frame" x="700" y="1400" width="330" height="420"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="bg2.jpg" id="17">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="title_humanity.png" id="HbY-9a-65g">
+                    <rect key="frame" x="362" y="800" width="300" height="150"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slogan_humanity.png" id="W5d-iS-vlB">
+                    <rect key="frame" x="234" y="305" width="555" height="115"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="5">
+                    <rect key="frame" x="0.0" y="768" width="1024" height="768"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="27"/>
+                    </connections>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="L6o-En-h7F">
+                    <rect key="frame" x="0.0" y="1400" width="1024" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="currentPageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </pageControl>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3w8-O4-0nt">
+                    <rect key="frame" x="487" y="580" width="50" height="50"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" backgroundImage="down.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="nextPage:" destination="-1" eventType="touchUpInside" id="vCN-0S-mX1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg2.jpg" width="1024" height="768"/>
+        <image name="bg_humanity.jpg" width="1024" height="768"/>
+        <image name="down.png" width="50" height="50"/>
+        <image name="humanity_float1.png" width="800" height="500"/>
+        <image name="humanity_float2.png" width="260" height="1280"/>
+        <image name="humanity_float3.png" width="330" height="420"/>
+        <image name="slogan_humanity.png" width="555" height="115"/>
+        <image name="title_humanity.png" width="300" height="150"/>
+    </resources>
+</document>

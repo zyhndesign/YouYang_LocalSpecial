@@ -1,0 +1,23 @@
+//
+// Prefix header for all source files of the 'TongDao' target in the 'TongDao' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+
+#define ios7 ([[UIDevice currentDevice].systemVersion floatValue] >= 7.0)
+
+#define RedColor [UIColor colorWithRed:203/255.0 green:47/255.0 blue:59/255.0 alpha:1]
+#define RedLineOneColor [UIColor colorWithRed:100/255.0 green:101/255.0 blue:104/255.0 alpha:1]
+#define RedLineTwoColor [UIColor colorWithRed:105/255.0 green:99/255.0 blue:97/255.0 alpha:1]
+
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? ([[UIScreen mainScreen] currentMode].size.height > 960.0f) : NO)
