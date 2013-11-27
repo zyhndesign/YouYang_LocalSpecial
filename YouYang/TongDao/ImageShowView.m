@@ -79,10 +79,21 @@
     [myActivew startAnimation];
     [self addSubview:myActivew];
     
-    imageLoadNet = [[ProImageLoadNet alloc] initWithDict:nil];
-    imageLoadNet.delegate = self;
-    imageLoadNet.imageUrl = [[urlStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    [imageLoadNet loadImageFromUrl];
+    NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSString *docBImagePath = [path stringByAppendingPathComponent:@"BigImage"];
+    BOOL dict = NO;
+    NSString *fileName = [docBImagePath stringByAppendingPathComponent:[[urlStr componentsSeparatedByString:@"/"] lastObject]];
+    if ([[NSFileManager defaultManager] fileExistsAtPath:fileName isDirectory:&dict])
+    {
+        [self didReciveImage:[UIImage imageWithContentsOfFile:fileName]];
+    }
+    else
+    {
+        imageLoadNet = [[ProImageLoadNet alloc] initWithDict:nil];
+        imageLoadNet.delegate = self;
+        imageLoadNet.imageUrl = [[urlStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        [imageLoadNet loadImageFromUrl];
+    }
     
 }
 
@@ -147,6 +158,14 @@
     if (backImage == nil)
     {
         [self didReceiveErrorCode:nil];
+    }
+    NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSString *docBImagePath = [path stringByAppendingPathComponent:@"BigImage"];
+    BOOL dict = NO;
+    NSString *fileName = [docBImagePath stringByAppendingPathComponent:[[urlStr componentsSeparatedByString:@"/"] lastObject]];
+    if (![[NSFileManager defaultManager] fileExistsAtPath:fileName isDirectory:&dict])
+    {
+        [UIImagePNGRepresentation(backImage) writeToFile:fileName atomically:YES];
     }
     [myActivew stopAnimation];
     [myActivew removeFromSuperview];

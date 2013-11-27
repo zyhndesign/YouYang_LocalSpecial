@@ -15,7 +15,7 @@
     UIActivityIndicatorView *activeView;
     MPMoviePlayerController *movie;
     BOOL isShow;
-    BOOL isMusicPlaying;
+    BOOL isMusicPlay;
     NSTimer *timerURL;
 }
 

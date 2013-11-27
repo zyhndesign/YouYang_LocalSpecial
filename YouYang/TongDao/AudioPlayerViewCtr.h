@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "LoadMusicQue.h"
+#import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVFoundation.h>
+
 @class AudioStreamer;
-@interface AudioPlayerViewCtr : UIViewController<NetworkDelegate>
+@interface AudioPlayerViewCtr : UIViewController<NetworkDelegate, AVAudioPlayerDelegate>
 {
     NSString *CurrentUrlStr;
     AudioStreamer *streamer;
@@ -30,6 +33,7 @@
     
     IBOutlet UIView *stopAllView;
     
+    AVAudioPlayer *musicPlayer;
 }
 
 

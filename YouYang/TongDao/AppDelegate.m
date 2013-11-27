@@ -38,16 +38,29 @@ static NSString *const kTrackingId = @"UA-44083057-3";
         [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     }
     [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
-    
     NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
     [self addSkipBackupAttributeToItemAtURL:[NSURL fileURLWithPath:path]];
     NSString *docProImagePath = [path stringByAppendingPathComponent:@"ProImage"];
+    NSString *docMusicPath = [path stringByAppendingPathComponent:@"music"];
+    NSString *docMoviePath = [path stringByAppendingPathComponent:@"movie"];
+    NSString *docBImagePath = [path stringByAppendingPathComponent:@"BigImage"];
     BOOL doct = YES;
     if (![[NSFileManager defaultManager] fileExistsAtPath:docProImagePath isDirectory:&doct])
     {
         [[NSFileManager defaultManager] createDirectoryAtPath:docProImagePath withIntermediateDirectories:YES attributes:nil error:nil];
     }
-    
+    if (![[NSFileManager defaultManager] fileExistsAtPath:docMusicPath isDirectory:&doct])
+    {
+        [[NSFileManager defaultManager] createDirectoryAtPath:docMusicPath withIntermediateDirectories:YES attributes:nil error:nil];
+    }
+    if (![[NSFileManager defaultManager] fileExistsAtPath:docMoviePath isDirectory:&doct])
+    {
+        [[NSFileManager defaultManager] createDirectoryAtPath:docMoviePath withIntermediateDirectories:YES attributes:nil error:nil];
+    }
+    if (![[NSFileManager defaultManager] fileExistsAtPath:docBImagePath isDirectory:&doct])
+    {
+        [[NSFileManager defaultManager] createDirectoryAtPath:docBImagePath withIntermediateDirectories:YES attributes:nil error:nil];
+    }
     [LocalSQL openDataBase];
     [LocalSQL createLocalTable];
     [LocalSQL closeDataBase];
@@ -59,10 +72,10 @@ static NSString *const kTrackingId = @"UA-44083057-3";
     [self.window makeKeyAndVisible];
     RootViewContr = self.viewController;
     
-    GetVersion *getVision = [[GetVersion alloc] init];
-    getVision.delegate = self;
-    [getVision getVersonFromItunes];
-    [getVision release];
+//    GetVersion *getVision = [[GetVersion alloc] init];
+//    getVision.delegate = self;
+//    [getVision getVersonFromItunes];
+//    [getVision release];
     
     return YES;
 }

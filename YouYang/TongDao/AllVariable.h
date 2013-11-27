@@ -23,4 +23,7 @@ int AllOnlyShowPresentOne;  // 只能同时展开一个详细内容
 SCGIFImageView* gifImageView;
 UIImageView *playMusicImageV;
 BOOL playing; /// music status
+
+NSMutableArray *AllMusicQueAry;
+
 #endif

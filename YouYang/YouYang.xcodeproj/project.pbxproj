@@ -14,7 +14,7 @@
 		D3057EA617E823BD00505C69 /* VersionViewContr.m in Sources */ = {isa = PBXBuildFile; fileRef = D3057EA417E823BC00505C69 /* VersionViewContr.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		D3057EA717E823BD00505C69 /* VersionViewContr.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3057EA517E823BC00505C69 /* VersionViewContr.xib */; };
 		D306087C17E8879700CE728E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D306087B17E8879700CE728E /* AVFoundation.framework */; };
-		D306088317E888BF00CE728E /* AudioPlayerViewCtr.m in Sources */ = {isa = PBXBuildFile; fileRef = D306088117E888BF00CE728E /* AudioPlayerViewCtr.m */; };
+		D306088317E888BF00CE728E /* AudioPlayerViewCtr.m in Sources */ = {isa = PBXBuildFile; fileRef = D306088117E888BF00CE728E /* AudioPlayerViewCtr.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		D306088417E888BF00CE728E /* AudioPlayerViewCtr.xib in Resources */ = {isa = PBXBuildFile; fileRef = D306088217E888BF00CE728E /* AudioPlayerViewCtr.xib */; };
 		D308825A17E5467B00F24817 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D308825917E5467B00F24817 /* UIKit.framework */; };
 		D308825C17E5467B00F24817 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D308825B17E5467B00F24817 /* Foundation.framework */; };
@@ -69,6 +69,9 @@
 		D364C3FD18234A5E00B0AF78 /* GetVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = D364C3FC18234A5E00B0AF78 /* GetVersion.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		D373B7F31808361800834EFC /* ContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = D373B7F21808361800834EFC /* ContentView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		D373B7F618083D7800834EFC /* ImageShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = D373B7F518083D7800834EFC /* ImageShowView.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		D379669E1845867600C9E9EF /* LoadSimpleMusicNet.m in Sources */ = {isa = PBXBuildFile; fileRef = D379669B1845867600C9E9EF /* LoadSimpleMusicNet.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		D379669F1845867600C9E9EF /* LoadSimpleMovieNet.m in Sources */ = {isa = PBXBuildFile; fileRef = D379669D1845867600C9E9EF /* LoadSimpleMovieNet.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		D37966A11845934D00C9E9EF /* YouGeXing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D37966A01845934D00C9E9EF /* YouGeXing.mp3 */; };
 		D38A15D91807D41200AEDF98 /* QueueProHanle.m in Sources */ = {isa = PBXBuildFile; fileRef = D38A15D61807D41200AEDF98 /* QueueProHanle.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		D38A15DA1807D41200AEDF98 /* QueueZipHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = D38A15D81807D41200AEDF98 /* QueueZipHandle.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		D38A15EF1807E95900AEDF98 /* Guide pages1024.png in Resources */ = {isa = PBXBuildFile; fileRef = D38A15ED1807E95900AEDF98 /* Guide pages1024.png */; };
@@ -306,6 +309,11 @@
 		D373B7F21808361800834EFC /* ContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentView.m; sourceTree = "<group>"; };
 		D373B7F418083D7800834EFC /* ImageShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageShowView.h; sourceTree = "<group>"; };
 		D373B7F518083D7800834EFC /* ImageShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageShowView.m; sourceTree = "<group>"; };
+		D379669A1845867600C9E9EF /* LoadSimpleMusicNet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadSimpleMusicNet.h; sourceTree = "<group>"; };
+		D379669B1845867600C9E9EF /* LoadSimpleMusicNet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadSimpleMusicNet.m; sourceTree = "<group>"; };
+		D379669C1845867600C9E9EF /* LoadSimpleMovieNet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadSimpleMovieNet.h; sourceTree = "<group>"; };
+		D379669D1845867600C9E9EF /* LoadSimpleMovieNet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadSimpleMovieNet.m; sourceTree = "<group>"; };
+		D37966A01845934D00C9E9EF /* YouGeXing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = YouGeXing.mp3; sourceTree = "<group>"; };
 		D38A15D51807D41200AEDF98 /* QueueProHanle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueProHanle.h; sourceTree = "<group>"; };
 		D38A15D61807D41200AEDF98 /* QueueProHanle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueProHanle.m; sourceTree = "<group>"; };
 		D38A15D71807D41200AEDF98 /* QueueZipHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueZipHandle.h; sourceTree = "<group>"; };
@@ -621,6 +629,10 @@
 		D30882A717E548BA00F24817 /* Net */ = {
 			isa = PBXGroup;
 			children = (
+				D379669A1845867600C9E9EF /* LoadSimpleMusicNet.h */,
+				D379669B1845867600C9E9EF /* LoadSimpleMusicNet.m */,
+				D379669C1845867600C9E9EF /* LoadSimpleMovieNet.h */,
+				D379669D1845867600C9E9EF /* LoadSimpleMovieNet.m */,
 				D364C3FB18234A5E00B0AF78 /* GetVersion.h */,
 				D364C3FC18234A5E00B0AF78 /* GetVersion.m */,
 				D343235C17E5939500F6B5E5 /* NetworkDelegate.h */,
@@ -667,6 +679,7 @@
 				D31E5E6217EECCB5003C5BE8 /* MovieBgPlayViewCtr.xib */,
 				D373B7F418083D7800834EFC /* ImageShowView.h */,
 				D373B7F518083D7800834EFC /* ImageShowView.m */,
+				D37966A01845934D00C9E9EF /* YouGeXing.mp3 */,
 			);
 			name = "Music-Movie-ImageScale";
 			sourceTree = "<group>";
@@ -1034,6 +1047,7 @@
 				D343237517E5B01300F6B5E5 /* HomePageViewContr.xib in Resources */,
 				D3D6E2CC1842F521001E3621 /* humanity_float1@2x.png in Resources */,
 				D3D6E27A1842F521001E3621 /* 404-1.png in Resources */,
+				D37966A11845934D00C9E9EF /* YouGeXing.mp3 in Resources */,
 				D343237A17E5B05200F6B5E5 /* LandscapeViewContr.xib in Resources */,
 				D3D6E2A01842F521001E3621 /* logo1.png in Resources */,
 				D3D6E2D01842F521001E3621 /* landscape_bg1@2x.png in Resources */,
@@ -1138,6 +1152,7 @@
 			files = (
 				D308826617E5467B00F24817 /* main.m in Sources */,
 				D308826A17E5467B00F24817 /* AppDelegate.m in Sources */,
+				D379669F1845867600C9E9EF /* LoadSimpleMovieNet.m in Sources */,
 				D308827317E5467B00F24817 /* ViewController.m in Sources */,
 				D308828117E5485800F24817 /* MFSP_MD5.m in Sources */,
 				D32ED8B5180E2CA0003AB2A3 /* TextLayoutView.m in Sources */,
@@ -1164,6 +1179,7 @@
 				D343236917E5A24100F6B5E5 /* LocalSQL.m in Sources */,
 				D343237417E5B01300F6B5E5 /* HomePageViewContr.m in Sources */,
 				D3E7B03E17F4658E00A1123E /* SimpleLandscView.m in Sources */,
+				D379669E1845867600C9E9EF /* LoadSimpleMusicNet.m in Sources */,
 				D343237917E5B05200F6B5E5 /* LandscapeViewContr.m in Sources */,
 				D343237E17E5B08F00F6B5E5 /* HumanityViewContr.m in Sources */,
 				D343238317E5B0B100F6B5E5 /* StoryViewContr.m in Sources */,

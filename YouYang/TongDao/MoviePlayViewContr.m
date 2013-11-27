@@ -9,6 +9,7 @@
 #import "MoviePlayViewContr.h"
 #import "AllVariable.h"
 #import "AudioPlayerViewCtr.h"
+#import "LoadSimpleMovieNet.h"
 
 
 @interface MoviePlayViewContr ()
@@ -28,8 +29,8 @@
 
 - (void)viewDidLoad
 {
-    isMusicPlaying = playing;
-    if (isMusicPlaying) {
+    isMusicPlay = playing;
+    if (isMusicPlay) {
         [AllAudioPlayViewCtr play:nil];
     }
     [self moviePlay];
@@ -54,10 +55,29 @@
 
 - (void)moviePlay
 {
-    movie = [[MPMoviePlayerController alloc] initWithContentURL:[NSURL URLWithString:urlStr]];
-    movie.controlStyle = MPMovieControlStyleFullscreen;
-    movie.scalingMode  = MPMovieScalingModeAspectFill;
-    [movie.view setFrame:self.view.bounds];
+    NSArray *tempAry = [urlStr componentsSeparatedByString:@"/"];
+    
+    LoadSimpleMovieNet *loadMoiveNet = [[LoadSimpleMovieNet alloc] init];
+    
+    if([loadMoiveNet loadMusicData:urlStr musicName:[tempAry lastObject]])
+    {
+        NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+        NSString *filePath = [path stringByAppendingPathComponent:[NSString stringWithFormat:@"movie/%@", [tempAry lastObject]]];
+        
+        movie = [[MPMoviePlayerController alloc] initWithContentURL:[NSURL fileURLWithPath:filePath]];
+        movie.controlStyle = MPMovieControlStyleFullscreen;
+        movie.scalingMode  = MPMovieScalingModeAspectFill;
+        [movie.view setFrame:self.view.bounds];
+    }
+    else
+    {
+        movie = [[MPMoviePlayerController alloc] initWithContentURL:[NSURL URLWithString:urlStr]];
+        movie.controlStyle = MPMovieControlStyleFullscreen;
+        movie.scalingMode  = MPMovieScalingModeAspectFill;
+        [movie.view setFrame:self.view.bounds];
+    }
+    [loadMoiveNet release];
+    
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(myMovieFinishedCallback:)
                                                  name:MPMoviePlayerPlaybackDidFinishNotification
@@ -123,7 +143,7 @@
 {
     //视频播放对象
     [activeView stopAnimating];
-    if (isMusicPlaying) {
+    if (isMusicPlay) {
         [AllAudioPlayViewCtr play:nil];
     }
     if (isShow)
@@ -145,6 +165,10 @@
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     [self dismissViewControllerAnimated:YES completion:nil];
+    if (isMusicPlay)
+    {
+        [AllAudioPlayViewCtr play:nil];
+    }
 }
 
 
