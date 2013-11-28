@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>CEE78FB1-8FB5-495A-8AD9-170AFA6E2A05</string>
+	<string>122CADD1-3A75-49E4-B74F-F697E510FE18</string>
 	<key>IDESourceControlProjectName</key>
 	<string>YouYang</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>4D67A1AB-CA31-4195-924A-E5C85463B093</key>
-		<string>https://github.com/zyhndesign/YouYang_IOS.git</string>
+		<key>189C73F7-6ADE-4080-B892-6F52E3F3DCAF</key>
+		<string>https://github.com/zyhndesign/YouYang_LocalSpecial.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>YouYang/YouYang.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>4D67A1AB-CA31-4195-924A-E5C85463B093</key>
+		<key>189C73F7-6ADE-4080-B892-6F52E3F3DCAF</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/zyhndesign/YouYang_IOS.git</string>
+	<string>https://github.com/zyhndesign/YouYang_LocalSpecial.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>4D67A1AB-CA31-4195-924A-E5C85463B093</string>
+	<string>189C73F7-6ADE-4080-B892-6F52E3F3DCAF</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>4D67A1AB-CA31-4195-924A-E5C85463B093</string>
+			<string>189C73F7-6ADE-4080-B892-6F52E3F3DCAF</string>
 			<key>IDESourceControlWCCName</key>
-			<string>YouYang_IOS</string>
+			<string>YouYang_LocalSpecial</string>
 		</dict>
 	</array>
 </dict>
