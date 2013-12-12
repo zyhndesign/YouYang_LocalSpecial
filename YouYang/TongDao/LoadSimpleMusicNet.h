@@ -12,8 +12,19 @@
 {
     NSMutableData *backData;
     NSURLConnection *connect;
+    Class TaskClass;
 }
 @property(nonatomic, strong)NSString *Name;
 - (void)loadMusicData:(NSString*)url musicName:(NSString*)musicName;
+
+/**
+ *   verion 2.0
+ */
+
+@property(nonatomic, strong)NSString* musicUrl;
+- (id)initWithClass:(Class)TClass;
+- (void)loadMenuFromUrl;
+- (void)cancelLoad;
+
 
 @end

@@ -33,6 +33,12 @@ static NSString *const kTrackingId = @"UA-44083057-3";
     [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
     [[GAI sharedInstance] trackerWithName:@"TongDao" trackingId:@"UA-44083057-3"];
     
+    AllGroupInfoArray = [[NSMutableArray alloc] init];
+    for (int i = 0; i < 7; i++)
+    {
+        NSMutableArray *arry = [NSMutableArray array];
+        [AllGroupInfoArray addObject:arry];
+    }
     if (ios7)
     {
         [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];

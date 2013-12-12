@@ -15,6 +15,7 @@
 @class SCGIFImageView;
 @class ActionView;
 @class AudioPlayerViewCtr;
+@class LoaderViewController;
 
 ViewController *RootViewContr;
 UIScrollView *AllScrollView;
@@ -23,7 +24,19 @@ int AllOnlyShowPresentOne;  // 只能同时展开一个详细内容
 SCGIFImageView* gifImageView;
 UIImageView *playMusicImageV;
 BOOL playing; /// music status
+BOOL AllLoad;
+BOOL AllOnceLoad;
 
 NSMutableArray *AllMusicQueAry;
+NSMutableDictionary *AllMovieInfoDict;
+long AllZipSize;
+long AllLoadLenght;
+
+long AllVideoSize;
+long AllLoadVideoLenght;
+
+LoaderViewController *AllLoaderViewContr;   //
+NSMutableArray *AllGroupInfoArray;  // 存放所有区下载的任务相关的数据，但视频数据临时计算
+BOOL AllMusicListLoadOver;
 
 #endif

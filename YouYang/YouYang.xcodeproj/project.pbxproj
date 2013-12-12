@@ -51,6 +51,21 @@
 		D33A250C1830DF4000B93F2A /* icon80.png in Resources */ = {isa = PBXBuildFile; fileRef = D33A25041830DF4000B93F2A /* icon80.png */; };
 		D33A250D1830DF4000B93F2A /* icon100.png in Resources */ = {isa = PBXBuildFile; fileRef = D33A25051830DF4000B93F2A /* icon100.png */; };
 		D33A250E1830DF4000B93F2A /* icon152.png in Resources */ = {isa = PBXBuildFile; fileRef = D33A25061830DF4000B93F2A /* icon152.png */; };
+		D34167E51859A0ED00884441 /* LoaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D34167E31859A0ED00884441 /* LoaderViewController.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		D34167E61859A0ED00884441 /* LoaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D34167E41859A0ED00884441 /* LoaderViewController.xib */; };
+		D34167F41859A11F00884441 /* SimpleQueSceneHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = D34167E91859A11F00884441 /* SimpleQueSceneHandle.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		D34167F51859A11F00884441 /* SimpleQueHumeHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = D34167EB1859A11F00884441 /* SimpleQueHumeHandle.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		D34167F61859A11F00884441 /* SimpleQueStoryHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = D34167ED1859A11F00884441 /* SimpleQueStoryHandle.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		D34167F71859A11F00884441 /* SimpleQueCommunHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = D34167EF1859A11F00884441 /* SimpleQueCommunHandle.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		D34167F81859A11F00884441 /* SimpleQueMusicHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = D34167F11859A11F00884441 /* SimpleQueMusicHandle.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		D34167F91859A11F00884441 /* SimpleQueVideoHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = D34167F31859A11F00884441 /* SimpleQueVideoHandle.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		D34167FE1859A14000884441 /* cache_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = D34167FA1859A14000884441 /* cache_btn.png */; };
+		D34167FF1859A14000884441 /* cache_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D34167FB1859A14000884441 /* cache_btn@2x.png */; };
+		D34168001859A14000884441 /* icon_tick_50.png in Resources */ = {isa = PBXBuildFile; fileRef = D34167FC1859A14000884441 /* icon_tick_50.png */; };
+		D34168011859A14000884441 /* icon_tick_50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D34167FD1859A14000884441 /* icon_tick_50@2x.png */; };
+		D34168081859A4B800884441 /* QueueVideoHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = D34168031859A4B800884441 /* QueueVideoHandle.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		D34168091859A4B800884441 /* XMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D34168051859A4B800884441 /* XMLParser.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		D341680A1859A4B800884441 /* QueueOnceLoaderZip.m in Sources */ = {isa = PBXBuildFile; fileRef = D34168071859A4B800884441 /* QueueOnceLoaderZip.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		D343235F17E593A300F6B5E5 /* LoadMenuInfoNet.m in Sources */ = {isa = PBXBuildFile; fileRef = D343235E17E593A300F6B5E5 /* LoadMenuInfoNet.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		D343236217E593B600F6B5E5 /* LoadZipFileNet.m in Sources */ = {isa = PBXBuildFile; fileRef = D343236117E593B600F6B5E5 /* LoadZipFileNet.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		D343236517E593D800F6B5E5 /* ProImageLoadNet.m in Sources */ = {isa = PBXBuildFile; fileRef = D343236417E593D800F6B5E5 /* ProImageLoadNet.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -278,6 +293,31 @@
 		D33A25041830DF4000B93F2A /* icon80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon80.png; sourceTree = "<group>"; };
 		D33A25051830DF4000B93F2A /* icon100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon100.png; sourceTree = "<group>"; };
 		D33A25061830DF4000B93F2A /* icon152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon152.png; sourceTree = "<group>"; };
+		D34167E21859A0ED00884441 /* LoaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoaderViewController.h; sourceTree = "<group>"; };
+		D34167E31859A0ED00884441 /* LoaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoaderViewController.m; sourceTree = "<group>"; };
+		D34167E41859A0ED00884441 /* LoaderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoaderViewController.xib; sourceTree = "<group>"; };
+		D34167E81859A11F00884441 /* SimpleQueSceneHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleQueSceneHandle.h; sourceTree = "<group>"; };
+		D34167E91859A11F00884441 /* SimpleQueSceneHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleQueSceneHandle.m; sourceTree = "<group>"; };
+		D34167EA1859A11F00884441 /* SimpleQueHumeHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleQueHumeHandle.h; sourceTree = "<group>"; };
+		D34167EB1859A11F00884441 /* SimpleQueHumeHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleQueHumeHandle.m; sourceTree = "<group>"; };
+		D34167EC1859A11F00884441 /* SimpleQueStoryHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleQueStoryHandle.h; sourceTree = "<group>"; };
+		D34167ED1859A11F00884441 /* SimpleQueStoryHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleQueStoryHandle.m; sourceTree = "<group>"; };
+		D34167EE1859A11F00884441 /* SimpleQueCommunHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleQueCommunHandle.h; sourceTree = "<group>"; };
+		D34167EF1859A11F00884441 /* SimpleQueCommunHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleQueCommunHandle.m; sourceTree = "<group>"; };
+		D34167F01859A11F00884441 /* SimpleQueMusicHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleQueMusicHandle.h; sourceTree = "<group>"; };
+		D34167F11859A11F00884441 /* SimpleQueMusicHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleQueMusicHandle.m; sourceTree = "<group>"; };
+		D34167F21859A11F00884441 /* SimpleQueVideoHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleQueVideoHandle.h; sourceTree = "<group>"; };
+		D34167F31859A11F00884441 /* SimpleQueVideoHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleQueVideoHandle.m; sourceTree = "<group>"; };
+		D34167FA1859A14000884441 /* cache_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cache_btn.png; sourceTree = "<group>"; };
+		D34167FB1859A14000884441 /* cache_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cache_btn@2x.png"; sourceTree = "<group>"; };
+		D34167FC1859A14000884441 /* icon_tick_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_tick_50.png; sourceTree = "<group>"; };
+		D34167FD1859A14000884441 /* icon_tick_50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_tick_50@2x.png"; sourceTree = "<group>"; };
+		D34168021859A4B800884441 /* QueueVideoHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueVideoHandle.h; sourceTree = "<group>"; };
+		D34168031859A4B800884441 /* QueueVideoHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueVideoHandle.m; sourceTree = "<group>"; };
+		D34168041859A4B800884441 /* XMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParser.h; sourceTree = "<group>"; };
+		D34168051859A4B800884441 /* XMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParser.m; sourceTree = "<group>"; };
+		D34168061859A4B800884441 /* QueueOnceLoaderZip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueOnceLoaderZip.h; sourceTree = "<group>"; };
+		D34168071859A4B800884441 /* QueueOnceLoaderZip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueOnceLoaderZip.m; sourceTree = "<group>"; };
 		D343235C17E5939500F6B5E5 /* NetworkDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkDelegate.h; sourceTree = "<group>"; };
 		D343235D17E593A300F6B5E5 /* LoadMenuInfoNet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadMenuInfoNet.h; sourceTree = "<group>"; };
 		D343235E17E593A300F6B5E5 /* LoadMenuInfoNet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadMenuInfoNet.m; sourceTree = "<group>"; };
@@ -486,6 +526,10 @@
 		D308824D17E5467B00F24817 = {
 			isa = PBXGroup;
 			children = (
+				D34167FA1859A14000884441 /* cache_btn.png */,
+				D34167FB1859A14000884441 /* cache_btn@2x.png */,
+				D34167FC1859A14000884441 /* icon_tick_50.png */,
+				D34167FD1859A14000884441 /* icon_tick_50@2x.png */,
 				D3F346721808E0FC00479AC8 /* YYicon72Change.png */,
 				D3F346731808E0FD00479AC8 /* YYicon144Change.png */,
 				D3F3466E1808E06500479AC8 /* YYIcon72.png */,
@@ -571,6 +615,9 @@
 				D308827417E5467B00F24817 /* ViewController.xib */,
 				D324715417F30C340049BF9B /* SCGIFImageView.h */,
 				D324715517F30C340049BF9B /* SCGIFImageView.m */,
+				D34167E21859A0ED00884441 /* LoaderViewController.h */,
+				D34167E31859A0ED00884441 /* LoaderViewController.m */,
+				D34167E41859A0ED00884441 /* LoaderViewController.xib */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -578,6 +625,7 @@
 		D308827D17E5483700F24817 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				D34167E71859A10600884441 /* SimpleQue */,
 				D33A24F61830DF2300B93F2A /* googleAnalytics */,
 				D30882A717E548BA00F24817 /* Net */,
 				D38A15D41807D3FB00AEDF98 /* DataBase */,
@@ -723,6 +771,25 @@
 			path = googleAnalytics;
 			sourceTree = "<group>";
 		};
+		D34167E71859A10600884441 /* SimpleQue */ = {
+			isa = PBXGroup;
+			children = (
+				D34167E81859A11F00884441 /* SimpleQueSceneHandle.h */,
+				D34167E91859A11F00884441 /* SimpleQueSceneHandle.m */,
+				D34167EA1859A11F00884441 /* SimpleQueHumeHandle.h */,
+				D34167EB1859A11F00884441 /* SimpleQueHumeHandle.m */,
+				D34167EC1859A11F00884441 /* SimpleQueStoryHandle.h */,
+				D34167ED1859A11F00884441 /* SimpleQueStoryHandle.m */,
+				D34167EE1859A11F00884441 /* SimpleQueCommunHandle.h */,
+				D34167EF1859A11F00884441 /* SimpleQueCommunHandle.m */,
+				D34167F01859A11F00884441 /* SimpleQueMusicHandle.h */,
+				D34167F11859A11F00884441 /* SimpleQueMusicHandle.m */,
+				D34167F21859A11F00884441 /* SimpleQueVideoHandle.h */,
+				D34167F31859A11F00884441 /* SimpleQueVideoHandle.m */,
+			);
+			name = SimpleQue;
+			sourceTree = "<group>";
+		};
 		D36E30EB17E6FE2700928F76 /* SimpleView */ = {
 			isa = PBXGroup;
 			children = (
@@ -745,6 +812,12 @@
 		D38A15D41807D3FB00AEDF98 /* DataBase */ = {
 			isa = PBXGroup;
 			children = (
+				D34168021859A4B800884441 /* QueueVideoHandle.h */,
+				D34168031859A4B800884441 /* QueueVideoHandle.m */,
+				D34168041859A4B800884441 /* XMLParser.h */,
+				D34168051859A4B800884441 /* XMLParser.m */,
+				D34168061859A4B800884441 /* QueueOnceLoaderZip.h */,
+				D34168071859A4B800884441 /* QueueOnceLoaderZip.m */,
 				D343236717E5A24100F6B5E5 /* LocalSQL.h */,
 				D343236817E5A24100F6B5E5 /* LocalSQL.m */,
 				D38A15D51807D41200AEDF98 /* QueueProHanle.h */,
@@ -1056,9 +1129,11 @@
 				D3D6E2791842F521001E3621 /* video.png in Resources */,
 				D3D6E2C11842F521001E3621 /* music_next_defult@2x.png in Resources */,
 				D3D6E2941842F521001E3621 /* artifact_float1.png in Resources */,
+				D34168011859A14000884441 /* icon_tick_50@2x.png in Resources */,
 				D3D6E2911842F521001E3621 /* music_play_defult.png in Resources */,
 				D343237F17E5B08F00F6B5E5 /* HumanityViewContr.xib in Resources */,
 				D3D6E2A71842F521001E3621 /* title_background.png in Resources */,
+				D34167FF1859A14000884441 /* cache_btn@2x.png in Resources */,
 				D343238417E5B0B100F6B5E5 /* StoryViewContr.xib in Resources */,
 				D3D6E2BD1842F521001E3621 /* music_defult@2x.png in Resources */,
 				D3D6E2AC1842F521001E3621 /* back_defult@2x.png in Resources */,
@@ -1098,6 +1173,7 @@
 				D3D6E2AD1842F521001E3621 /* close_actived@2x.png in Resources */,
 				D33A25081830DF4000B93F2A /* icon40.png in Resources */,
 				D3D6E2C91842F521001E3621 /* down@2x.png in Resources */,
+				D34167FE1859A14000884441 /* cache_btn.png in Resources */,
 				D3D6E2C01842F521001E3621 /* music_next_actived@2x.png in Resources */,
 				D3D6E27C1842F521001E3621 /* bg1.jpg in Resources */,
 				D3D6E2DA1842F521001E3621 /* title_community@2x.png in Resources */,
@@ -1112,6 +1188,8 @@
 				D3D6E2851842F521001E3621 /* defultbg-180.png in Resources */,
 				D3D6E2B91842F521001E3621 /* defultbg-210@2x.png in Resources */,
 				D3D6E2A81842F521001E3621 /* title_community.png in Resources */,
+				D34167E61859A0ED00884441 /* LoaderViewController.xib in Resources */,
+				D34168001859A14000884441 /* icon_tick_50.png in Resources */,
 				D3D6E29E1842F521001E3621 /* landscape_bg1.png in Resources */,
 				D3D6E29D1842F521001E3621 /* landscape.png in Resources */,
 				D3D6E2D91842F521001E3621 /* title_background@2x.png in Resources */,
@@ -1150,8 +1228,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D34167F41859A11F00884441 /* SimpleQueSceneHandle.m in Sources */,
 				D308826617E5467B00F24817 /* main.m in Sources */,
 				D308826A17E5467B00F24817 /* AppDelegate.m in Sources */,
+				D34167F81859A11F00884441 /* SimpleQueMusicHandle.m in Sources */,
 				D379669F1845867600C9E9EF /* LoadSimpleMovieNet.m in Sources */,
 				D308827317E5467B00F24817 /* ViewController.m in Sources */,
 				D308828117E5485800F24817 /* MFSP_MD5.m in Sources */,
@@ -1172,13 +1252,16 @@
 				D56B787E17E55E8D005DA29F /* unzip.c in Sources */,
 				D56B787F17E55E8D005DA29F /* zip.c in Sources */,
 				D343235F17E593A300F6B5E5 /* LoadMenuInfoNet.m in Sources */,
+				D34167F51859A11F00884441 /* SimpleQueHumeHandle.m in Sources */,
 				D3E7B04417F4723700A1123E /* SimpleTrationSmallView.m in Sources */,
+				D34167F91859A11F00884441 /* SimpleQueVideoHandle.m in Sources */,
 				D343236217E593B600F6B5E5 /* LoadZipFileNet.m in Sources */,
 				D38A15D91807D41200AEDF98 /* QueueProHanle.m in Sources */,
 				D343236517E593D800F6B5E5 /* ProImageLoadNet.m in Sources */,
 				D343236917E5A24100F6B5E5 /* LocalSQL.m in Sources */,
 				D343237417E5B01300F6B5E5 /* HomePageViewContr.m in Sources */,
 				D3E7B03E17F4658E00A1123E /* SimpleLandscView.m in Sources */,
+				D34168081859A4B800884441 /* QueueVideoHandle.m in Sources */,
 				D379669E1845867600C9E9EF /* LoadSimpleMusicNet.m in Sources */,
 				D343237917E5B05200F6B5E5 /* LandscapeViewContr.m in Sources */,
 				D343237E17E5B08F00F6B5E5 /* HumanityViewContr.m in Sources */,
@@ -1188,11 +1271,16 @@
 				D3057EA617E823BD00505C69 /* VersionViewContr.m in Sources */,
 				D302EDC718065D5F004589D3 /* ActionView.m in Sources */,
 				D3E7B04117F469DA00A1123E /* SimpleHumanityView.m in Sources */,
+				D341680A1859A4B800884441 /* QueueOnceLoaderZip.m in Sources */,
 				D306088317E888BF00CE728E /* AudioPlayerViewCtr.m in Sources */,
+				D34168091859A4B800884441 /* XMLParser.m in Sources */,
 				D32CBF9817E92FFE0004EFB2 /* LoadMusicQue.m in Sources */,
 				D3E7B03B17F45BD100A1123E /* SimpleHeadLineView.m in Sources */,
+				D34167F61859A11F00884441 /* SimpleQueStoryHandle.m in Sources */,
 				D32CBF9B17E9372F0004EFB2 /* UIDevice+Hardware.m in Sources */,
+				D34167E51859A0ED00884441 /* LoaderViewController.m in Sources */,
 				D32CBF9E17E9373C0004EFB2 /* AudioStreamer.m in Sources */,
+				D34167F71859A11F00884441 /* SimpleQueCommunHandle.m in Sources */,
 				D324715617F30C340049BF9B /* SCGIFImageView.m in Sources */,
 				D373B7F618083D7800834EFC /* ImageShowView.m in Sources */,
 				D31E5E6317EECCB7003C5BE8 /* MovieBgPlayViewCtr.m in Sources */,

@@ -14,6 +14,7 @@
 #import "AllVariable.h"
 #import "LoadSimpleMusicNet.h"
 #import "SCGIFImageView.h"
+#import "ViewController.h"
 
 @interface AudioPlayerViewCtr ()
 
@@ -194,6 +195,8 @@
 - (void)didReceiveData:(NSDictionary *)dict
 {
     stopAllView.hidden = YES;
+    AllMusicListLoadOver = YES;
+    [RootViewContr musicListLoadFinish];
     [activeView stopAnimating];
     NSArray *arry = [dict objectForKey:@"data"];
     for (int i = 0; i < arry.count; i++)
@@ -206,6 +209,8 @@
 
 - (void)didReceiveErrorCode:(NSError *)ErrorDict
 {
+    AllMusicListLoadOver = YES;
+    [RootViewContr musicListLoadFinish];
     stopAllView.hidden = YES;
     [activeView stopAnimating];
 }

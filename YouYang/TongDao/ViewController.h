@@ -35,6 +35,7 @@
     AudioPlayerViewCtr *audioPlayViewCtr;
     VersionViewContr *versionViewCtr;
     
+    NSMutableArray *allInfoArray;
     UIButton *CurrentBt;
     
     IBOutlet UIView *stopAllView;
@@ -46,11 +47,22 @@
     IBOutlet UIActivityIndicatorView *activeView;
     
     BOOL isCloseMenuScrol;
+    BOOL menuLoadFinish;
+    NSMutableArray *videoArray;
 }
 @property(nonatomic, assign)IBOutlet UIView *otherContentV;
+@property(nonatomic, strong)NSMutableArray *videoArray;;
+@property(nonatomic, strong)IBOutlet UILabel *implyLb;
+
 - (IBAction)MenuShow:(UIButton*)sender;
 - (IBAction)selectMenu:(UIButton*)sender;
 - (IBAction)musicShow:(UIButton*)sender;
 - (void)imageScaleShow:(NSString*)imageUrl;
 - (void)presentViewContr:(NSDictionary*)_infoDict;
+
+- (void)caculateMovieLoad;
+- (void)startLoadMovie;
+- (void)finishLoad;
+- (void)musicListLoadFinish;
+
 @end

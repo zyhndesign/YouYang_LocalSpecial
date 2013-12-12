@@ -8,11 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "NetworkDelegate.h"
-
 @interface LoadZipFileNet : NSObject
 {
+    Class TaskClass;
     NSMutableData *backData;
-    NSString *zipStr;
     NSURLConnection *connect;
     int connectNum;
 }
@@ -22,6 +21,8 @@
 @property(nonatomic, strong)NSString *zipStr;
 @property(nonatomic, assign)float zipSize;
 
+- (id)initWithClass:(Class)TClass;
 - (void)loadMenuFromUrl;
 - (void)cancelLoad;
+
 @end

@@ -11,6 +11,9 @@
 #import "MoviePlayViewContr.h"
 #import "AllVariable.h"
 #import "ViewController.h"
+#import "LoaderViewController.h"
+#import "SimpleQueSceneHandle.h"
+
 @implementation ContentView
 @synthesize progressV;
 @synthesize proValueLb;
@@ -72,7 +75,7 @@
     [self addSubview:proMarkLb];
     
     progressV = [[UIProgressView alloc] initWithFrame:CGRectMake(412, 425, 200, 5)];
-    progressV.trackTintColor    = [UIColor lightGrayColor];
+    progressV.trackTintColor    = BlackBGColor;
     progressV.progressTintColor = RedColor;
     progressV.progress = 0.0f;
     [self addSubview:progressV];
@@ -110,6 +113,13 @@
 
 - (void)dealloc
 {
+    if (loadZipNet)
+    {
+        loadZipNet.delegate = nil;
+        [loadZipNet cancelLoad];
+        // 开始SimpleQue里面的任务
+        [SimpleQueSceneHandle startTask];
+    }
     [_webView removeFromSuperview];
     _webView = nil;
     [bgLabel removeFromSuperview];
@@ -125,13 +135,19 @@
 {
     if ([[initDict objectForKey:@"url"] length] > 5)
     {
+        /**
+         *  先暂停所有的SimpleQue任务
+         */
+        
+        [AllLoaderViewContr stopAllTask:nil];
         loadZipNet = [[LoadZipFileNet alloc] init];
         loadZipNet.delegate = self;
         loadZipNet.urlStr   = [[initDict objectForKey:@"url"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
         loadZipNet.md5Str   = [[initDict objectForKey:@"md5"] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
         loadZipNet.zipStr   = [initDict objectForKey:@"id"];
         loadZipNet.zipSize  = [[initDict objectForKey:@"size"] floatValue];
-        [QueueZipHandle addTarget:loadZipNet];
+        [loadZipNet loadMenuFromUrl];
+        //   [QueueZipHandle addTarget:loadZipNet];
     }
 }
 
@@ -171,7 +187,8 @@
         UIAlertView *alerView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"网络数据有误" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
         [alerView show];
     }
-    
+    // 开始SimpleQue里面的任务
+    [SimpleQueSceneHandle startTask];
 }
 
 - (void)didReceiveZipResult:(BOOL)success
@@ -180,6 +197,9 @@
     proMarkLb.hidden  = YES;
     proValueLb.hidden = YES;
     progressV.hidden  = YES;
+    
+    // 开始SimpleQue里面的任务
+    [SimpleQueSceneHandle startTask];
 }
 
 #pragma mark - xmlParser delegate
