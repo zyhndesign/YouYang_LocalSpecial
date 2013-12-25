@@ -1336,8 +1336,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "4E004AA9-1EC6-49F4-8A9A-9F9F8B80B8B9";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4E004AA9-1EC6-49F4-8A9A-9F9F8B80B8B9";
+				PROVISIONING_PROFILE = "F0A1EE96-894E-4C1B-B182-04A7472A6A37";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F0A1EE96-894E-4C1B-B182-04A7472A6A37";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -1363,8 +1363,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "4E004AA9-1EC6-49F4-8A9A-9F9F8B80B8B9";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4E004AA9-1EC6-49F4-8A9A-9F9F8B80B8B9";
+				PROVISIONING_PROFILE = "F0A1EE96-894E-4C1B-B182-04A7472A6A37";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "F0A1EE96-894E-4C1B-B182-04A7472A6A37";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
@@ -1374,8 +1374,8 @@
 		D308827A17E5467B00F24817 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Ling Li (4366PRAT2A)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ling Li (4366PRAT2A)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: ShenZhen Bobo Network Technology Co.,Ltd";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: ShenZhen Bobo Network Technology Co.,Ltd";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TongDao/YouYang-Prefix.pch";
 				INFOPLIST_FILE = "TongDao/YouYang-Info.plist";
@@ -1387,8 +1387,8 @@
 					"/Users/sunyong/Desktop/company/中意/YouYang_IOS/YouYang/TongDao/googleAnalytics",
 				);
 				PRODUCT_NAME = YouYang;
-				PROVISIONING_PROFILE = "4E004AA9-1EC6-49F4-8A9A-9F9F8B80B8B9";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4E004AA9-1EC6-49F4-8A9A-9F9F8B80B8B9";
+				PROVISIONING_PROFILE = "2D25A5A5-EDF4-489E-9841-EC64AFF19EC7";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2D25A5A5-EDF4-489E-9841-EC64AFF19EC7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1396,8 +1396,8 @@
 		D308827B17E5467B00F24817 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Ling Li (4366PRAT2A)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ling Li (4366PRAT2A)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: ShenZhen Bobo Network Technology Co.,Ltd";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: ShenZhen Bobo Network Technology Co.,Ltd";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TongDao/YouYang-Prefix.pch";
 				INFOPLIST_FILE = "TongDao/YouYang-Info.plist";
@@ -1409,8 +1409,8 @@
 					"/Users/sunyong/Desktop/company/中意/YouYang_IOS/YouYang/TongDao/googleAnalytics",
 				);
 				PRODUCT_NAME = YouYang;
-				PROVISIONING_PROFILE = "4E004AA9-1EC6-49F4-8A9A-9F9F8B80B8B9";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4E004AA9-1EC6-49F4-8A9A-9F9F8B80B8B9";
+				PROVISIONING_PROFILE = "2D25A5A5-EDF4-489E-9841-EC64AFF19EC7";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2D25A5A5-EDF4-489E-9841-EC64AFF19EC7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
