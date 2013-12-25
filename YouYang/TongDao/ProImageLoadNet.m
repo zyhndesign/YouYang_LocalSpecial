@@ -27,7 +27,16 @@
 - (void)loadImageFromUrl
 {
    // NSString *testURL = [imageUrl stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:[imageUrl stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:120.0f];
+    NSArray *tempAry = [imageUrl componentsSeparatedByString:@"%"];
+    NSMutableURLRequest *request = nil;
+    if (tempAry.count > 3)
+    {
+        request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:imageUrl] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:120.0f];
+    }
+    else
+    {
+        request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:[imageUrl stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:120.0f];
+    }
     [request setHTTPMethod:@"GET"];
     [request setHTTPBody:nil];
     
