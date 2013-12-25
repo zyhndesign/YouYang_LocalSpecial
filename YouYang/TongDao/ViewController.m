@@ -59,6 +59,7 @@
     
     NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
     NSArray *array = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:[path stringByAppendingString:@"/music"] error:nil];
+    NSArray *arrayT = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:[path stringByAppendingString:@"/movie"] error:nil];
     [AllMusicQueAry addObjectsFromArray:array];
     [AllMusicQueAry removeObject:@".DS_Store"];
     
@@ -136,10 +137,11 @@
 - (void)addLoadViewContr
 {
     UIButton *showLoaderVBt = [UIButton buttonWithType:UIButtonTypeSystem];
-    [showLoaderVBt setFrame:CGRectMake((1024-150)/2 + 30, 20, 150, 50)];
+    float scrolContentHeigh = AllScrollView.contentSize.height;
+    [showLoaderVBt setFrame:CGRectMake((1024-150)/2 + 30, scrolContentHeigh-50, 150, 50)];
     [showLoaderVBt setBackgroundImage:[UIImage imageNamed:@"cache_btn.png"] forState:UIControlStateNormal];
     [showLoaderVBt addTarget:self action:@selector(showLoaderView:) forControlEvents:UIControlEventTouchDown];
-    [self.view addSubview:showLoaderVBt];
+    [AllScrollView addSubview:showLoaderVBt];
     
     AllLoaderViewContr = [[LoaderViewController alloc] init];
     [AllLoaderViewContr.view setFrame:CGRectMake(0, 768, AllLoaderViewContr.view.frame.size.width, AllLoaderViewContr.view.frame.size.height)];
@@ -339,6 +341,7 @@ static BOOL handleScrol;
     [self addLoadViewContr];
     if (AllMusicListLoadOver && menuLoadFinish)
     {
+        [AllLoaderViewContr changeView:nil];
         [self showLoaderView:nil];
         [self finishLoad];
     }
@@ -370,6 +373,7 @@ static BOOL handleScrol;
     [self addLoadViewContr];
     if (AllMusicListLoadOver && menuLoadFinish)
     {
+        [AllLoaderViewContr changeView:nil];
         [self showLoaderView:nil];
         [self finishLoad];
     }
@@ -381,6 +385,7 @@ static BOOL handleScrol;
 {
     if (AllMusicListLoadOver && menuLoadFinish)
     {
+        [AllLoaderViewContr changeView:nil];
         [self showLoaderView:nil];
         [self finishLoad];
     }

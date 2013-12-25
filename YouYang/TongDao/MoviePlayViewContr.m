@@ -48,7 +48,7 @@
 {
     self = [super init];
     if (self) {
-        urlStr = [[URLStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding] retain];
+        urlStr = [URLStr retain];
     }
     return self;
 }
@@ -71,7 +71,7 @@
     }
     else
     {
-        movie = [[MPMoviePlayerController alloc] initWithContentURL:[NSURL URLWithString:urlStr]];
+        movie = [[MPMoviePlayerController alloc] initWithContentURL:[NSURL URLWithString:[urlStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]]];
         movie.controlStyle = MPMovieControlStyleFullscreen;
         movie.scalingMode  = MPMovieScalingModeAspectFill;
         [movie.view setFrame:self.view.bounds];

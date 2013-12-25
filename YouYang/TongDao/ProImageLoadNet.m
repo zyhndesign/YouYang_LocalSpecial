@@ -26,8 +26,8 @@
 ////// bug 推荐的pro有重合，没处理
 - (void)loadImageFromUrl
 {
-   // imageUrl = [[imageURLStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding] retain];
-    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:imageUrl] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:120.0f];
+   // NSString *testURL = [imageUrl stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:[imageUrl stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:120.0f];
     [request setHTTPMethod:@"GET"];
     [request setHTTPBody:nil];
     

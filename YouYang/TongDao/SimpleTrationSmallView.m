@@ -80,14 +80,17 @@
         if(image)
             [proImageV setImage:[UIImage imageWithContentsOfFile:pathProFile]];
         else
+        {
             [proImageV setImage:[UIImage imageNamed:@"defultbg-200.png"]];
+            [[NSFileManager defaultManager] removeItemAtPath:pathProFile error:nil];
+        }
     }
     else
     {
         [proImageV setImage:[UIImage imageNamed:@"defultbg-200.png"]];
         ProImageLoadNet *proImageLoadNet = [[ProImageLoadNet alloc] initWithDict:_infoDict];
         proImageLoadNet.delegate = self;
-        proImageLoadNet.imageUrl = [imageURL stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        proImageLoadNet.imageUrl = imageURL;
         [QueueProHanle addTarget:proImageLoadNet];
     }
 }

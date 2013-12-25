@@ -90,7 +90,6 @@
     [hiddenTaskBt  setTitleColor:BlackBGColor forState:UIControlStateNormal];
     backLb.backgroundColor =  BlackBGColor;
     
-    [self changeView:nil];
     [super viewDidLoad];
 }
 
