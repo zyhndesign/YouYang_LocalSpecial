@@ -239,7 +239,7 @@ sqlite3 *dataBase;
             NSString *postDateStr  = [NSString stringWithFormat:@"%s", sqlite3_column_text(stmt, 9)];
             NSString *profileStr   = [NSString stringWithCString:(const char*)sqlite3_column_text(stmt, 10) encoding:NSUTF8StringEncoding];
             NSString *backgroundStr = [NSString stringWithCString:(const char*)sqlite3_column_text(stmt, 11) encoding:NSUTF8StringEncoding];
-            NSString *hasVideoStr = [NSString stringWithCString:(const char*)sqlite3_column_text(stmt, 11) encoding:NSUTF8StringEncoding];
+            NSString *hasVideoStr = [NSString stringWithCString:(const char*)sqlite3_column_text(stmt, 12) encoding:NSUTF8StringEncoding];
             NSString *sizeStr = [NSString stringWithFormat:@"%s", sqlite3_column_text(stmt, 13)];
             NSDictionary *subDict = [NSDictionary dictionaryWithObjectsAndKeys:idStr,@"id",md5Str,@"md5",nameStr, @"name",timeStampStr,@"timestamp",urlStr,@"url",authorStr,@"author",categoryStr,@"category",descriStr,@"description",headlineStr,@"headline",postDateStr,@"postDate",profileStr,@"profile",backgroundStr,@"background", hasVideoStr, @"hasVideo", sizeStr, @"size", nil];
             [backAry addObject:subDict];

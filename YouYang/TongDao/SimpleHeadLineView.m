@@ -50,6 +50,7 @@
     if ([[_infoDict objectForKey:@"hasVideo"] isEqualToString:@"true"])
         [videoImageV setImage:[UIImage imageNamed:@"video.png"]];
     
+    
     titleLb = [[UILabel alloc] initWithFrame:CGRectMake(0, 225, 210, 35)];
     titleLb.backgroundColor = [UIColor clearColor];
     titleLb.textAlignment = NSTextAlignmentCenter;
@@ -72,6 +73,7 @@
     detailTextV.text = [_infoDict objectForKey:@"description"];
     detailTextV.linesSpacing = 6;
     [self addSubview:detailTextV];
+    
     
 //    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
 //    paragraphStyle.lineSpacing = 6.0f;
