@@ -191,6 +191,11 @@
     
 }
 
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
+{
+    [self next:nil];
+}
+
 #pragma mark - net delegate
 - (void)didReceiveData:(NSDictionary *)dict
 {
