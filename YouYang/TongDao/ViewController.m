@@ -342,7 +342,7 @@ static BOOL handleScrol;
     if (AllMusicListLoadOver && menuLoadFinish)
     {
         [AllLoaderViewContr changeView:nil];
-        [self showLoaderView:nil];
+     //   [self showLoaderView:nil];
         [self finishLoad];
     }
 }
@@ -374,7 +374,7 @@ static BOOL handleScrol;
     if (AllMusicListLoadOver && menuLoadFinish)
     {
         [AllLoaderViewContr changeView:nil];
-        [self showLoaderView:nil];
+       // [self showLoaderView:nil];
         [self finishLoad];
     }
     UIAlertView *alerView = [[UIAlertView alloc] initWithTitle:@"提示" message:@"网络数据有误，请检查网络连接" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
@@ -386,7 +386,7 @@ static BOOL handleScrol;
     if (AllMusicListLoadOver && menuLoadFinish)
     {
         [AllLoaderViewContr changeView:nil];
-        [self showLoaderView:nil];
+      //  [self showLoaderView:nil];
         [self finishLoad];
     }
 }
