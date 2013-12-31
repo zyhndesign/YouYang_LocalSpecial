@@ -38,5 +38,8 @@
 
 - (void)FinishLoad:(int)taskTag;
 - (void)caculateVedioLoadTask;
+
+- (void)checkVedioTask;
+
 @end
 

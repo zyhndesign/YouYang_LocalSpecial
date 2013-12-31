@@ -120,19 +120,37 @@ static BOOL Loading;
     }
     else
     {
-        //finish
-        [AllLoaderViewContr FinishLoad:TaskVideo];
-        [SimpleQueVideoHandle LastLoadingJudge];
-        NSLog(@"Communite Finish!");
-        Loading = NO;
+        //check   finish
+        [AllLoaderViewContr checkVedioTask];
     }
 }
+
++ (BOOL)checkTask
+{
+    return allTaskAry.count;
+}
+
++ (void)sureFinish
+{
+    [AllLoaderViewContr FinishLoad:TaskVideo];
+    [SimpleQueVideoHandle LastLoadingJudge];
+    NSLog(@"Communite Finish!");
+    Loading = NO;
+}
+
++ (void)checkAfterStartTask
+{
+    Loading = YES;
+    LoadSimpleMovieNet *tempProNet = [allTaskAry lastObject];
+    [tempProNet loadMenuFromUrl];
+}
+
 
 + (void)addTarget:(id)target
 {
     if (![SimpleQueVideoHandle isEixstInAry:allTaskAry zipNet:target])
     {
-        [allTaskAry addObject:target];
+        [allTaskAry insertObject:target atIndex:0];
     }
 }
 

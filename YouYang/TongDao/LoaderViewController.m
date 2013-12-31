@@ -269,6 +269,18 @@
     else;
 }
 
+- (void)checkVedioTask
+{
+    [self performSelector:@selector(checkVedio) withObject:nil afterDelay:0.3f];
+}
+
+- (void)checkVedio
+{
+    if ([SimpleQueVideoHandle checkTask])
+        [SimpleQueVideoHandle checkAfterStartTask];
+    else
+        [SimpleQueVideoHandle sureFinish];
+}
 /**
  *  计算视频的任务量
  */
@@ -289,8 +301,8 @@
         NSString *docXmlPath = [path stringByAppendingPathComponent:[NSString stringWithFormat:@"%@/doc.xml", [initDict objectForKey:@"id"]]];
         [[XMLParser alloc] initWithFilePath:docXmlPath];
     }
-    [self goOnCaculateMovieLoader];
-    //[self performSelector:@selector(goOnCaculateMovieLoader) withObject:nil afterDelay:0.2f];
+    // sunyongT [self goOnCaculateMovieLoader];
+    [self performSelector:@selector(goOnCaculateMovieLoader) withObject:nil afterDelay:0.2f];
 }
 
 - (void)goOnCaculateMovieLoader
@@ -395,7 +407,7 @@
         [newView addSubview:bottomLineLb];
     }
     //////开始下载  /// 由于xml解析的原因，得延迟执行
-    [self performSelector:@selector(startLoading) withObject:nil afterDelay:0.2f];
+    [self performSelector:@selector(startLoading) withObject:nil afterDelay:0.3f];
     
 }
 /**
