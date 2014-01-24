@@ -66,16 +66,16 @@
         return;
     if ([[tempAry lastObject] isEqualToString:@"mp4"])
     {
-        NSString *pathProFile = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)  lastObject] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@/%@", [infoDict objectForKey:@"id"], backGround]];
-        if([[NSFileManager defaultManager] fileExistsAtPath:pathProFile])
-        {
-            movieBgPlayVC = [[MovieBgPlayViewCtr alloc] initwithURL:pathProFile];
-            [movieView addSubview:movieBgPlayVC.view];
-        }
-        else
-        {
-            [mainImageV setImage:[UIImage imageNamed:@"bg0.png"]];
-        }
+//        NSString *pathProFile = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)  lastObject] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@/%@", [infoDict objectForKey:@"id"], backGround]];
+//        if([[NSFileManager defaultManager] fileExistsAtPath:pathProFile])
+//        {
+//            movieBgPlayVC = [[MovieBgPlayViewCtr alloc] initwithURL:pathProFile];
+//            [movieView addSubview:movieBgPlayVC.view];
+//        }
+//        else
+//        {
+//            [mainImageV setImage:[UIImage imageNamed:@"bg0.png"]];
+//        }
     }
     else
     {

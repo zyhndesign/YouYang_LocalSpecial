@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomePageViewContr">
@@ -78,7 +78,7 @@
         <image name="down.png" width="50" height="50"/>
         <image name="featured_float1.png" width="330" height="650"/>
         <image name="featured_float2.png" width="385" height="700"/>
-        <image name="logo1.png" width="410" height="270"/>
+        <image name="logo1.png" width="420" height="270"/>
         <image name="title_featured.png" width="370" height="150"/>
     </resources>
 </document>

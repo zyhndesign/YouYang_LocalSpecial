@@ -47,7 +47,9 @@
     
     UIImageView *videoImageV = [[UIImageView alloc] initWithFrame:CGRectMake(proImageV.frame.size.width - 40, 0, 40, 35)];
     [proImageV addSubview:videoImageV];
-    if ([[_infoDict objectForKey:@"hasVideo"] isEqualToString:@"true"])
+    NSString *videoStr = [_infoDict objectForKey:@"hasVideo"];
+    NSString *fileName = [[videoStr componentsSeparatedByString:@"."] lastObject];
+    if ([[_infoDict objectForKey:@"hasVideo"] isEqualToString:@"true"] || [fileName isEqualToString:@"mp4"])
         [videoImageV setImage:[UIImage imageNamed:@"video.png"]];
     
     
